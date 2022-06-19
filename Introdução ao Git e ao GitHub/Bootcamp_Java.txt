@@ -1,0 +1,67 @@
+Comandos (Prompt de Comando)
+dir: listar pasta atual
+cd: navegação
+cd /: voltar ao inicio(base do diretorio)
+cd..: voltar
+cls: limpar a tela
+TAB(tecla): auto-completar
+↑(tecla): reutiliza o ultimo comando
+mkdir: criar uma pasta nova
+echo: print uma nova mensagem
+echo hello > hello.txt: cria o arquivo "hello.txt" e insere a palavra "hello"
+del workspace: deletar o conteudo dentro da pasta "workspace"
+rmdir workspace: deleta a pasta "workspace"
+
+Conceitos(GIT)
+Git: é um sistema distribuido e seguro
+SHA1(Secure Hash Algorithm): é um algoritimo de encriptação ou seja é um algoritimo que vai pegar os arquivos(foto,imagem,frase...) 
+e ira embaralhar de uma forma especifica. A encriptação gera um conjunto de characteres de 40 digitos (unico), servindo como identificação
+segura e rapida(É uma forma curta de representar um arquivo, ou estado do arquivo).Caso tenha uma modificação o conjunto de characteres
+ira mudar, e se for alterada novamente para o estado original, ela ira ser o mesmo conjunto de characteres de 40 digitos do inicio
+
+Os 3 tipos basicos de objetos do GIT responsaveis pelo vercionamento do codigo:
+-Blob: os arquivos ficam guardados dentro desse objeto(assim como o tipo, tamanho e o conteudo do arquivo)
+-Tree: as "Tree" armazenam e apontam os "Blob" alem de tambem armazenar o nome do arquivo(ao contrario do "Blob" que nao faz isso)
+a "Tree" é responsavel por montar toda estrutura de onde estão localizado esses arquivos. Elas podem apontar tanto para "Blob" quanto
+para "Tree"
+-Commit: é o objeto que ira juntar tudo e fazer sentido a alteração, ele pode apontar para uma "Tree","Parent", o ultimo "Commit" realizado, 
+o autor e mensagem
+
+Chave SSH: é uma forma de estabelecer uma conexão segura e encripitada entre 2 maquinas, existe 2 tipos de chaves(chave publica e privada)
+a chave SSH publica é necessaria para acessar o gitHub
+ssh-keygen -t ed25519 -c NomedoEmail@hotmail.com: cria as chaves SSH
+
+-Mostra chave SSH publica
+cd /c/Users/Nome/.ssh/
+ls
+cat id_ed25519.pub
+
+cd /c/Users/Nome/.ssh/
+eval $(ssh-agent -s)
+ls
+ssh-add id_ed25519
+
+Token de acesso pessoal: Tem o mesmo proposito da chave SSH(mas é parecido como usurio e senha)
+
+Comandos(GIT)
+git init: inicia o git dentro da pasta
+ls -a: lista pastas ocultas
+git add .: adiciona todos os arquivos para "staged"
+git config --global user.name Nome: realiza uma configuração inicial(username)
+git config --global user.email "nome@hotmail.com": realiza uma configuração inicial(email)
+
+Arquivo Markdown: é uma forma mais humana de escrever um arquivo HTML(nome.md)
+Arquivo HTML: é o esqueleto a estrutura basica de qualquer pagina
+#Nome: maior tamanho do texto(markdown)
+##Nome: medio tamanho do texto(markdown)
+###Nome: menor tamanho do texto(markdown)
+**Nome**: muda o texto para negrito
+_Nome_: muda o texto para italico
+"space"(tecla)-(tecla)"space"(tecla): ●
+
+
+
+
+
+
+
