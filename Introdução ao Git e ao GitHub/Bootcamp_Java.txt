@@ -47,6 +47,8 @@ Comandos(GIT)
 git init: inicia o git dentro da pasta
 ls -a: lista pastas ocultas
 git add .: adiciona todos os arquivos para "staged"
+git commit: realiza as mudanças que estão no "staged"
+git push origin main: realiza as alterações no GitHub
 git config --global user.name Nome: realiza uma configuração inicial(username)
 git config --global user.email "nome@hotmail.com": realiza uma configuração inicial(email)
 
